@@ -10,7 +10,7 @@ function TodaysForecast({ forecastToday }) {
             <span>{info.temp_c} C°</span>
             <span className="chance-of-rain-text">
               <img
-                src="img/drop.png"
+                src="/img/drop.png"
                 alt="raindrop icon"
                 className="raindrop-icon"
               />
