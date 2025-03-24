@@ -12,7 +12,7 @@ function WeeklyForecast({ week }) {
           <span className="day">{getDayName(info.date)}</span>
           <span className="chance-of-rain-text">
             <img
-              src="img/drop.png"
+              src="/img/drop.png"
               alt="raindrop icon"
               className="raindrop-icon"
             />

@@ -8,7 +8,7 @@ function Astro({ astro }) {
         </div>
 
         <div className="astro-img-container">
-          <img src="img/sunrise.png" alt="sunrise" className="astro-icon" />
+          <img src="/img/sunrise.png" alt="sunrise" className="astro-icon" />
         </div>
       </div>
       <div className="sunset card">
@@ -17,7 +17,7 @@ function Astro({ astro }) {
           <span className="astro-time">{astro.sunset}</span>
         </div>
         <div className="astro-img-container">
-          <img src="img/sunset.png" alt="sunset" className="astro-icon" />
+          <img src="/img/sunset.png" alt="sunset" className="astro-icon" />
         </div>
       </div>
     </div>
