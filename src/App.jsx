@@ -8,7 +8,7 @@ import WeeklyForecast from "./components/WeeklyForecast";
 import "./App.css";
 
 const apiKey = "fc548e7b0291495e81e70439252303";
-const baseUrl = `http://api.weatherapi.com/v1/forecast.json?key=${apiKey}`;
+const baseUrl = `https://api.weatherapi.com/v1/forecast.json?key=${apiKey}`;
 
 function App() {
   const [location, setLocation] = useState("Baguio");
