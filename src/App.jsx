@@ -21,7 +21,7 @@ function App() {
       },
       (error) => {
         console.error(error);
-        alert("Error getting location");
+        alert(`Error getting location. Using default location ${location}`);
       }
     );
   }, []);
@@ -45,17 +45,17 @@ function App() {
     let innerCardColor;
     let scrollbarColor;
 
-    if (hour >= 16 && hour < 17) {
+    if (hour >= 4 && hour < 16) {
       bgColor = "#a2caef";
       cardColor = "#96b7e3";
       innerCardColor = "#b1cef5";
-      innerCardColor;
-    } else if (hour >= 17 && hour < 18) {
+      scrollbarColor = "#8baad1 #9fc2f0";
+    } else if (hour >= 16 && hour < 18) {
       bgColor = "#fac55b";
       cardColor = "#f8aa27";
       innerCardColor = "#ffd47d";
       scrollbarColor = "#fcbf44 #ffda8f";
-    } else if (hour >= 18) {
+    } else {
       bgColor = "rgb(29, 29, 29)";
       cardColor = "rgb(22, 22, 22)";
       innerCardColor = "rgb(41, 41, 41)";
@@ -74,7 +74,9 @@ function App() {
     );
   };
 
-  useEffect(() => updateStyles, []);
+  useEffect(() => {
+    updateStyles();
+  }, []);
 
   const handleClick = (input) => {
     setLocation(input);
